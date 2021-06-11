@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(245, 246, 246);
+    color: #1B1B32;
+}
+.navegador{
+    background-color: rgb(10, 10, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 1rem;
+    height: 38px;
+}
+.nav-buscador-izq{
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    background-color: rgb(58, 59, 79);
+    padding-left: 0.5rem;
+    margin: 0 1.7rem 0 10px;
+    overflow: hidden;
+}
+.nav-icono-lupa{
+    font-size: 0.9rem;
+    color:rgb(192, 191, 191);
+}
+input.nav-buscador{
+    width: 90%;
+    height: 25px;
+    margin: 1px 0.5rem 0 0.5rem;
+    border: none;
+    outline: none;
+    background-color: rgb(58, 59, 79);
+    color: rgb(192, 191, 191);
+}
+input.nav-buscador::placeholder{
+    color: rgb(211, 211, 211);
+    font-size: 20px;
+    font-weight: lighter;
+}
+.nav-medio{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 4rem;
+}
+img.nav-logo-principal{
+    display: block;
+    margin-top: 5px;
+    height: 25px;
+}
+.nav-menu-y-registro-derecha{
+    display: flex;
+    width: 33vw;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.nav-boton{
+    height: 29.5px;
+    width: 74.5px;
+    border: 1.5px solid white;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.nav-boton a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgb(10, 10, 35);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.nav-boton a:hover{
+    background-color: white;
+    color: rgb(10, 10, 35);
+}
+.nav-contenedor-registro{
+    background: linear-gradient(#fecc4c,#ffac33);
+    border: solid 2px rgb(228, 137, 0);
+    width: 101px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+a.nav-registro{
+    display: block;
+    height: 100%;
+    padding-top: 3.5px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+}
+a.nav-registro:hover { 
+    background-color: #fecc4c;
+}
+.main-texto-inicial{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+/* font-family: 'Lato', sans-serif; */
+.contenedor-texto-inicial{
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.texto-inicial{
+    width: 70%;
+    min-width: 733.8px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.texto-inicial h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 45px;
+    margin-top: 3rem;
+}
+.texto-inicial strong{
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem 0;
+}
+.texto-inicial p{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+    margin-top: 1.3rem;
+}
+ul.lista-logos{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 1rem 0 2rem 0;
+}
+ul li{
+    text-decoration: none;
+    font-size: 2.2rem;
+}
+.main-contenedor-boton{
+    background: linear-gradient(#fecc4c,#ffac33);
+    border: solid 2px rgb(228, 137, 0);
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+a.main-boton{
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 100%;
+    padding-top: 3.5px;
+    font-size: 27px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+}
+a.main-boton:hover{
+    background-color: #fecc4c;
+}
+.main-imagen-portada{
+    text-align: center;
+    overflow: hidden;
+}
+.main-imagen-portada img{
+    width: 100%;
+}
+.contenedor-as-seen-in{
+    background-color: rgb(58, 59, 79);
+    text-align: center;
+    padding: 3.2% 0; /*padding -40px en full screen*/
+    margin-bottom: 4rem;
+}
+.contenedor-as-seen-in h1{
+    color: rgb(211, 211, 211);
+    font-size: 45px;
+    margin-top: 1rem;
+}
+.texto-as-seen-in{
+    margin-bottom: 1rem;
+}
+.opiniones-alumnos{
+    width: 89%;
+    margin: 0 auto;
+}
+.opiniones-alumnos h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44.5px;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+.profe-1,.profe-2,.profe-3{
+    display: flex;
+    margin: 3rem;
+    background-color: white;
+    box-shadow: 0 0 10px 0.3px rgb(204, 204, 204);
+}
+.profe-1-parrafos,.profe-2-parrafos,.profe-3-parrafos{
+    padding: 40px;
+    text-align: center;
+}
+p.profe-letra-grande{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin: 20px 0;
+}
+p.profe-letra-chica{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 2rem;
+}
+.contenedor-certificaciones{
+    width: 81%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.certificaciones{
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.certificaciones h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44.5px;
+    margin: 3rem 0 2.5rem 0;
+    padding: 0 1rem;
+}
+ul.lista-certificados{
+    margin-bottom: 2.5rem;
+    list-style: none;
+}
+a.certificado-individual{
+    height: 55px;
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    border: 4px solid #1B1B32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #1B1B32;
+}
+.interior-certificado{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+span.icono-lista {
+    font-size: 45px;
+    margin-right: 1.3rem;
+}
+span#icono-laptop {
+    font-size: 35px;
+}
+a.certificado-individual:hover {
+    background-color: #1B1B32;
+    color: rgb(211, 211, 211);
+}
+footer.footer{
+    background-color: rgb(211, 211, 211);
+    padding: 30px 0 50px;
+}
+.footer-contenedor-total{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.footer-contenedor{
+    width: 92.5%;
+    min-width: 1072.5px;
+    color: #1B1B32;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-contenedor-superior{
+    display: flex;
+}
+.footer-izquierda{
+    width: 45%;
+}
+.footer-izquierda p{
+    margin: 2rem 0.5rem 1.7rem 0;
+    line-height: 2rem;
+}
+.footer-izquierda-a{
+    font-size: 18px;
+    color: #1B1B32;
+    font-weight: bolder;
+    margin-bottom: 60px;
+}
+.footer-izquierda a{
+    font-size: 18px;
+    color: #1B1B32;
+}
+.footer-izquierda a:hover{
+    text-decoration: none;
+}
+.footer-derecha{
+    width: 55%;
+}
+.cabecera-footer-derecha{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    margin: 10px;
+}
+.contenedor-columnas{
+     display: flex;
+     padding: 1.25rem 0 1rem 1.25rem;
+}
+.columna-izquierda{
+    width: 31.3%;
+}
+.columna-medio{
+    padding-left: 25px;
+    width: 31.3%;
+}
+.columna-derecha{
+    width: 37.3%;
+}
+ul.lista-footer li{
+    list-style: none;
+    font-size: 16px;
+    padding: 5px 0;
+    line-height: 1.55rem;
+}
+ul.lista-footer li a{
+    text-decoration: none;
+    color:  #1B1B32;
+}
+ul.lista-footer li a:hover{
+    text-decoration: underline;
+}
+.footer-inferior{
+    border-top: 2px solid rgb(194, 194, 194);
+    padding-top: 20px;
+}
+.footer-inferior ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-inferior a{
+    padding: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    color:  #1B1B32;
+}
+.footer-inferior a:hover{
+    text-decoration: underline;
+}
+@media (max-width:1200px) {
+    .certificaciones{
+        margin: 0 auto;
+        overflow: hidden;
+        width: 595px;
+    }
+    ul.lista-certificados{
+        margin: 0 auto;
+    }
+    footer.footer{
+        padding: 15px 0 35px;
+    }
+    .footer-contenedor{
+        width: 80%;
+        min-width: 720px;
+    }
+    .footer-contenedor-superior{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-izquierda{
+        width: 100%;
+    }
+    .footer-derecha{
+        width: 100%;
+    }
+    .footer-inferior ul{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 993px) {
+    .texto-inicial{
+        min-width: 595px;
+        width: 70%;
+    }
+    .opiniones-alumnos{
+        width: 89%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profe-1,.profe-2,.profe-3{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .profe-1-parrafos,.profe-2-parrafos,.profe-3-parrafos{
+        padding: 40px;
+        text-align: center;}
+}     
+@media (max-width: 900px) {  
+    .nav-buscador-izq{
+        display: none;
+    }
+    .nav-logo-principal{
+        margin-top: 5px;
+        width: 100%;
+        max-width: 206px;
+    }
+}
+@media (max-width: 767px){
+    .contenedor-texto-inicial{
+        width: 95%;
+    }
+    .texto-inicial{
+        width: 100%;
+        min-width: 0px;
+    }
+    .contenedor-certificaciones{
+        width: 95%;
+    }
+    .certificaciones{
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+    }
+    .footer-contenedor-total{
+        width: 92.5%;
+    }
+    .footer-contenedor{
+        width: 100%;
+        min-width: 0px;
+    }
+}
+@media (max-width: 715px){
+    .contenedor-texto-inicial{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .texto-inicial{
+        width: 100%;
+        min-width: 0px;
+    }   
+}
+@media (max-width: 595px) {
+    .texto-as-seen-in img{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 520px) {
+    .columna-medio{
+        padding: 0 10px;
+    }
+}
+@media (max-width: 453px) and (min-width: 50px){
+    .texto-inicial h1 {
+        font-size: 40px;
+    }
+    .nav-contenedor-registro{
+        display: none;
+    }
+    span.icono-lista {
+        font-size: 25px;
+    }
+    span#icono-laptop {
+        font-size: 20px;
+    }
+    .opiniones-alumnos h1{
+        font-size:40px;
+    }
+    .profe-1,.profe-2,.profe-3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+/* a los 765px hay una mediaquaries y el texto se centra solo con 15px de padding */
